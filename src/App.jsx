@@ -28,7 +28,7 @@ export default function App() {
           className="flex flex-col items-center"
         >
           <img
-            src="public/profile.jpg"
+            src="./public/profile.jpg"
             alt="Maria Arpitha"
             className="w-40 h-40 rounded-full shadow-lg border-4 border-gray-200 object-cover"
           />
