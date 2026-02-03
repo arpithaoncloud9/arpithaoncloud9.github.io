@@ -169,35 +169,94 @@ export default function Portfolio() {
             <Briefcase className="text-sky-700" /> Professional Journey & Career Progression
           </h2>
           <div className="flex flex-col gap-12">
-            {/* Cloud Engineer — Independent Projects & Certifications */}
-            <div className="flex items-start gap-8">
-              {/* Left: Heading and Time */}
-              <div className="w-64 flex flex-col items-end pr-4 pt-2">
-                <div className="text-lg font-bold text-right">☁️ Cloud Engineer — Independent Projects & Certifications</div>
-                <div className="text-xs text-gray-500 font-normal mt-1">2023 – Present</div>
+          {/* Cloud & DevOps Engineer — Independent Projects & Certifications */}
+          <div className="flex items-start gap-8">
+            {/* Left: Heading and Time */}
+            <div className="w-64 flex flex-col items-end pr-4 pt-2">
+              <div className="text-lg font-bold text-right flex items-center gap-2">
+                <span>☁️</span>
+                <span>Cloud & DevOps Engineer</span>
               </div>
-              {/* Right: Content */}
-              <Card className="flex-1">
-                <CardContent className="p-6">
-                  <div className="mb-2">Focused on building production-grade cloud systems end to end, with an emphasis on automation, security, and operational clarity.</div>
-                  <div className="font-semibold mb-1">Static Website Hosting on AWS</div>
-                  <ul className="list-disc pl-6 mb-3">
-                    <li>Designed and deployed a production-ready static website using S3, CloudFront, Route 53, IAM, and CloudWatch.</li>
-                    <li>Implemented HTTPS, caching strategies, monitoring, and cost-optimized storage to mirror real-world deployment standards.</li>
-                  </ul>
-                  <div className="font-semibold mb-1">End-to-End DevOps Pipeline for a Full-Stack Application</div>
-                  <ul className="list-disc pl-6 mb-3">
-                    <li>Architected and automated a complete CI/CD and infrastructure workflow using GitHub Actions, Terraform, AWS CLI, EC2, ALB, RDS (MySQL), and CloudWatch.</li>
-                    <li>Built a custom VPC, provisioned compute and networking resources, configured load balancing, and automated deployments to support a scalable, production-ready environment.</li>
-                  </ul>
-                  <div className="font-semibold mb-1">Continuous Skill Development</div>
-                  <ul className="list-disc pl-6">
-                    <li>Strengthened hands-on expertise across AWS, Terraform, CI/CD pipelines, serverless concepts, monitoring, and cloud security.</li>
-                    <li>Earned multi-cloud certifications (AWS, Azure, GCP) along with Scrum Master I, reflecting a strong commitment to continuous learning and professional growth.</li>
-                  </ul>
-                </CardContent>
-              </Card>
+              <div className="text-xs text-gray-500 font-normal mt-1">2023 – Present</div>
             </div>
+        
+            {/* Right: Content */}
+            <Card className="flex-1">
+              <CardContent className="p-6 space-y-6">
+        
+                <div className="text-gray-700">
+                  Focused on architecting and automating production-grade cloud systems with strong emphasis on security, scalability, and operational excellence.
+                </div>
+        
+                {/* 3-Tier AWS Project */}
+                <div>
+                  <div className="font-semibold mb-2 flex items-center gap-2 text-blue-600">
+                    <span>🏗️</span>
+                    <span>3‑Tier AWS Project</span>
+                  </div>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Architected and implemented a production‑style AWS 3‑tier environment using Terraform (VPC, ALB, EC2, RDS).</li>
+                    <li>Enabled secure private‑subnet application hosting via SSM and PM2.</li>
+                    <li>Implemented automated zero‑touch deployments using GitHub Actions, S3, and SSM.</li>
+                  </ul>
+                </div>
+        
+                {/* Serverless Password Rotation */}
+                <div>
+                  <div className="font-semibold mb-2 flex items-center gap-2 text-green-600">
+                    <span>🔐</span>
+                    <span>Serverless Password Rotation</span>
+                  </div>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Developed an automated password‑rotation system using AWS Lambda, Secrets Manager, and EventBridge.</li>
+                    <li>Implemented secure, KMS‑encrypted secret rotation with least‑privilege IAM.</li>
+                    <li>Validated scheduled end‑to‑end rotation execution.</li>
+                  </ul>
+                </div>
+        
+                {/* Automated CI/CD Pipeline */}
+                <div>
+                  <div className="font-semibold mb-2 flex items-center gap-2 text-purple-600">
+                    <span>⚙️</span>
+                    <span>Automated CI/CD Pipeline</span>
+                  </div>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Built a fully automated CI/CD pipeline using GitHub Actions and AWS EC2.</li>
+                    <li>Implemented CI stages for tests, builds, and artifact packaging.</li>
+                    <li>Delivered zero‑touch deployments to EC2 for consistent, production‑ready releases.</li>
+                  </ul>
+                </div>
+        
+                {/* Static Website Hosting */}
+                <div>
+                  <div className="font-semibold mb-2 flex items-center gap-2 text-yellow-600">
+                    <span>🌐</span>
+                    <span>Static Website Hosting on AWS</span>
+                  </div>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Architected and deployed a production‑ready static site using S3, CloudFront, Route 53, IAM, and CloudWatch.</li>
+                    <li>Implemented HTTPS, caching strategies, monitoring, and cost‑optimized storage.</li>
+                  </ul>
+                </div>
+        
+                {/* Full DevOps Pipeline */}
+                <div>
+                  <div className="font-semibold mb-2 flex items-center gap-2 text-red-600">
+                    <span>🚀</span>
+                    <span>Full DevOps Pipeline for a Full‑Stack Application</span>
+                  </div>
+                  <ul className="list-disc pl-6 space-y-1">
+                    <li>Designed and deployed a complete CI/CD and infrastructure automation workflow using GitHub Actions, Terraform, AWS CLI, EC2, ALB, RDS MySQL, and CloudWatch.</li>
+                    <li>Built a custom VPC, provisioned compute resources, configured load balancing, and automated deployments.</li>
+                    <li>Delivered a scalable, production‑ready environment with end‑to‑end automation.</li>
+                  </ul>
+                </div>
+        
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
 
             {/* Excelsoft Technologies — Mysore */}
             <div className="flex items-start gap-8">
