@@ -39,7 +39,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: 'easeOut' }}
           >
-            Cloud DevOps Engineer
+            Cloud and DevOps Engineer
           </motion.h4>
           <div className="flex space-x-6 mt-4">
             <a href="https://www.linkedin.com/in/maria-arpitha/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
