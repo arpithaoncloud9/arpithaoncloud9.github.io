@@ -59,11 +59,11 @@ const toolboxItems = [
   {
     icon: "🛠️",
     label: "Infrastructure as Code",
-    value: "Terraform, CloudFormation",
+    value: "Terraform",
     color: "bg-emerald-50 border-emerald-300 text-emerald-800",
   },
   {
-    icon: "⚙️",
+    icon: "🔄",
     label: "CI/CD Pipelines",
     value: "Jenkins, GitHub Actions, AWS CodeDeploy",
     color: "bg-indigo-50 border-indigo-300 text-indigo-800",
@@ -77,13 +77,19 @@ const toolboxItems = [
   {
     icon: "📊",
     label: "Monitoring & Logging",
-    value: "Amazon CloudWatch",
+    value: "Amazon CloudWatch, CloudTrail",
     color: "bg-pink-50 border-pink-300 text-pink-800",
   },
   {
     icon: "💻",
     label: "Developer Tools",
     value: "Git, GitHub, JIRA",
+    color: "bg-gray-50 border-gray-300 text-gray-800",
+  },
+  {
+    icon: "⌨️",
+    label: "Scripting",
+    value: "Bash, YAML, JSON",
     color: "bg-gray-50 border-gray-300 text-gray-800",
   },
 ];
@@ -115,11 +121,8 @@ export default function Portfolio() {
       {/* Intro */}
       <section className="max-w-3xl mx-auto text-center mb-16">
         <p className="text-lg leading-relaxed">
-          Hello! I'm <strong>Maria Arpitha</strong>, a Cloud Engineer passionate about architecting,
-          automating, and optimizing cloud-native environments. I'm exploring new horizons—pursuing
-          Scrum Master certifications, diving into AI innovations, and expanding my expertise toward
-          cloud-agnostic architectures. I aim to transform complex challenges into elegant, scalable
-          solutions.
+          Hello! I'm <strong>Maria Arpitha</strong>, a Cloud and DevOps Engineer passionate about architecting,
+          automating, and optimizing cloud-native environments. I enjoy designing systems that are scalable, reliable, and easy to operate, and I continually refine my craft through hands‑on projects and real‑world problem‑solving.
         </p>
       </section>
 
@@ -275,7 +278,7 @@ export default function Portfolio() {
           {/* Excelsoft Technologies - Mysore */}
           <div className="flex items-start gap-8 mb-12">
             <div className="w-64 flex flex-col items-end pr-4 pt-2">
-              <div className="text-xl font-semibold text-right">Cloud Infrastructure Engineer</div>
+              <div className="text-xl font-semibold text-right">Cloud Support Engineer</div>
               <div className="text-xs text-gray-500 font-normal mt-1">
                 Excelsoft Technologies - Mysore<br />Jul 2021 - Feb 2023
               </div>
@@ -292,21 +295,12 @@ export default function Portfolio() {
 
                   {/* Existing points */}
                   <li>Engineered scalable and reliable cloud infrastructure to support high-availability exam systems.</li>
-                  <li>Automated infrastructure provisioning and deployments using Terraform, improving consistency and uptime.</li>
+                  <li>Automated provisioning AWS core services like VPC, EC2, S3, RDS and Lambda using parameterized Terraform templates to eliminate manual configuration drift.</li>
                   <li>Optimized resource utilization and performance through monitoring and tuning.</li>
-                  <li>Troubleshot cross-stack issues spanning infrastructure, application, and security layers.</li>
-
-                  {/* Newly added Cloud Infra Provisioning points */}
-                  <li>Provisioned secure multi-tier AWS environments using Terraform modules, enabling consistent deployments across dev, QA, and production.</li>
-                  <li>Designed VPC architectures with public/private subnets, NAT gateways, route tables, and security groups to support scalable workloads.</li>
-                  <li>Automated provisioning of EC2, RDS, S3, and ELB resources using parameterized Terraform templates to eliminate manual configuration drift.</li>
                   <li>Implemented IAM roles, policies, and least‑privilege access patterns to secure provisioning workflows and infrastructure operations.</li>
-                  <li>Developed reusable Terraform modules for networking, compute, and storage, reducing deployment time and improving maintainability.</li>
-                  <li>Integrated Terraform with CI/CD pipelines to enable controlled, versioned infrastructure rollouts using plan/apply workflows.</li>
-                  <li>Managed remote Terraform state and environment‑specific variables to ensure safe, collaborative infrastructure changes.</li>
                   <li>Provisioned CloudWatch metrics, dashboards, and alarms as code to standardize observability across all environments.</li>
-                  <li>Performed capacity planning and configured autoscaling policies to support peak exam traffic loads.</li>
-                  <li>Conducted infrastructure drift detection and remediation to maintain environment integrity and compliance.</li>
+                  <li>Troubleshot cross-stack issues spanning infrastructure, application, and security layers.</li>
+                  <li>Maintained all AWS infrastructure code in GitHub for version control, collaboration, and automated deployment workflows.</li>
 
                 </ul>
 
@@ -333,6 +327,10 @@ export default function Portfolio() {
                   <li>Led AWS training programs covering core cloud concepts and services.</li>
                   <li>Designed and delivered hands-on labs to bridge theory with real-world cloud use cases.</li>
                   <li>Collaborated with senior engineers to simplify technical concepts, making them clear for both technical and non‑technical audiences</li>
+                  <li>Built Jenkins‑based CI/CD pipelines to automate builds, tests, and deployments</li>
+                  <li>Gained exposure to Docker for packaging applications under mentorship</li>
+
+
                 </ul>
               </CardContent>
             </Card>
