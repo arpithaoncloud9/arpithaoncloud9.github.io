@@ -213,7 +213,9 @@ export default function Portfolio() {
   <div className="flex items-start gap-8 mb-12">
     <div className="w-64 flex flex-col items-end pr-4 pt-2">
       <div className="text-lg font-bold text-right">Cloud & DevOps Engineer</div>
-      <div className="text-xs text-gray-500 mt-1">2023 – Present</div>
+      <div className="text-xs text-gray-500 mt-1">
+      United States<br />2023 – Present
+      </div>
     </div>
 
     <Card className="flex-1">
@@ -221,6 +223,15 @@ export default function Portfolio() {
         <div className="text-gray-700">
           Focused on architecting and automating production-grade cloud systems with strong
           emphasis on security, scalability, and operational excellence.
+        </div>
+        
+        {/* AWS Serverless CRUD API Project */}
+        <div>
+          <div className="font-semibold mb-2 text-brown-600">AWS Serverless CRUD API Project</div>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Built a fully serverless REST API using AWS Lambda, API Gateway, and DynamoDB to support complete CRUD operations.</li>
+            <li>Implemented secure IAM roles, structured data models, and validated all endpoints using Postman and DynamoDB results.</li>
+          </ul>
         </div>
 
         {/* 3-Tier AWS Project */}
