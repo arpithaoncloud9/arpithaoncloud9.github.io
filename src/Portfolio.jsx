@@ -227,7 +227,7 @@ export default function Portfolio() {
         
         {/* AWS Serverless CRUD API Project */}
         <div>
-          <div className="font-semibold mb-2 text-orange-600">AWS Serverless CRUD API Project</div>
+          <div className="font-semibold mb-2 text-brown-600 !text-brown-600">AWS Serverless CRUD API Project</div>
           <ul className="list-disc pl-6 space-y-1">
             <li>Built a fully serverless REST API using AWS Lambda, API Gateway, and DynamoDB to support complete CRUD operations.</li>
             <li>Implemented secure IAM roles, structured data models, and validated all endpoints using Postman and DynamoDB results.</li>
