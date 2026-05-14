@@ -53,7 +53,7 @@ const toolboxItems = [
   {
     icon: "☁️",
     label: "Cloud Platforms",
-    value: "AWS, GCP, Azure",
+    value: "AWS (Primary), GCP, Azure",
     color: "bg-sky-50 border-sky-300 text-sky-800",
   },
   {
@@ -63,34 +63,58 @@ const toolboxItems = [
     color: "bg-emerald-50 border-emerald-300 text-emerald-800",
   },
   {
+    icon: "⚙️",
+    label: "Configuration Management",
+    value: "Ansible",
+    color: "bg-orange-50 border-orange-300 text-orange-800",
+  },
+  {
     icon: "🔄",
     label: "CI/CD Pipelines",
-    value: "Jenkins, GitHub Actions, AWS CodeDeploy",
+    value: "GitHub Actions, Jenkins",
     color: "bg-indigo-50 border-indigo-300 text-indigo-800",
   },
   {
+    icon: "🐳",
+    label: "Containers",
+    value: "Docker",
+    color: "bg-blue-50 border-blue-300 text-blue-800",
+  },
+  {
     icon: "🔐",
-    label: "Security & Governance",
-    value: "IAM, Shared Responsibility Model",
+    label: "Security & IAM",
+    value: "IAM, Secrets Manager, KMS",
     color: "bg-yellow-50 border-yellow-300 text-yellow-800",
   },
   {
     icon: "📊",
     label: "Monitoring & Logging",
-    value: "Amazon CloudWatch, CloudTrail",
+    value: "CloudWatch, CloudTrail",
     color: "bg-pink-50 border-pink-300 text-pink-800",
   },
   {
+    icon: "⌨️",
+    label: "Scripting & Markup",
+    value: "Bash, YAML, JSON",
+    color: "bg-violet-50 border-violet-300 text-violet-800",
+  },
+  {
     icon: "💻",
-    label: "Developer Tools",
-    value: "Git, GitHub, JIRA",
+    label: "Version Control",
+    value: "Git, GitHub",
     color: "bg-gray-50 border-gray-300 text-gray-800",
   },
   {
-    icon: "⌨️",
-    label: "Scripting",
-    value: "Bash, YAML, JSON",
+    icon: "🐧",
+    label: "Operating System",
+    value: "Linux, Windows",
     color: "bg-gray-50 border-gray-300 text-gray-800",
+  },
+  {
+    icon: "🤖",
+    label: "AI Tools",
+    value: "GitHub Copilot, Claude Code",
+    color: "bg-teal-50 border-teal-300 text-teal-800",
   },
 ];
 
@@ -121,9 +145,22 @@ export default function Portfolio() {
       {/* Intro */}
       <section className="max-w-3xl mx-auto text-center mb-16">
         <p className="text-lg leading-relaxed">
-          Hello! I'm <strong>Maria Arpitha</strong>, a Cloud and DevOps Engineer passionate about architecting,
-          automating, and optimizing cloud-native environments. I enjoy designing systems that are scalable, reliable, and easy to operate, and I continually refine my craft through hands‑on projects and real‑world problem‑solving.
+        Hi, I'm <strong>Maria Arpitha</strong> — a Cloud & DevOps Engineer 
+  with 3+ years of AWS production experience, 6 cloud certifications 
+  and 6 hands-on projects built to production standards.
         </p>
+
+        <p className="text-lg leading-relaxed mt-4">
+  My background includes provisioning and managing AWS infrastructure 
+  using Terraform, building CI/CD pipelines with GitHub Actions and 
+  Jenkins, and designing secure multi-AZ architectures — gained through 
+  real production work at an EdTech SaaS company serving clients across 
+  the US, UK, and Southeast Asia.
+</p>
+<p className="text-lg leading-relaxed mt-4">
+  Based in Bristol, CT — open to remote and hybrid roles. 
+  Fully authorized to work in the US (H4 EAD, no sponsorship required).
+</p>
       </section>
 
       <hr className="border-t border-slate-200 max-w-4xl mx-auto mb-12" />
@@ -203,192 +240,259 @@ export default function Portfolio() {
           </section>
         </div>
 
-        {/* Career Progression */}
+{/* Career Progression */}
 <section className="scroll-mt-20" id="career">
   <h2 className="text-2xl font-semibold mb-10 flex items-center gap-2">
     <Briefcase className="text-sky-700" /> Professional Journey & Career Progression
   </h2>
 
-  {/* Cloud & DevOps Engineer */}
+  {/* Cloud & DevOps Engineer — Self-Directed */}
   <div className="flex items-start gap-8 mb-12">
     <div className="w-64 flex flex-col items-end pr-4 pt-2">
       <div className="text-lg font-bold text-right">Cloud & DevOps Engineer</div>
+      <div className="text-sm text-sky-700 font-medium text-right mt-1">
+        Self-Directed Cloud Engineering
+      </div>
       <div className="text-xs text-gray-500 mt-1">
-      United States<br />2023 – Present
+        United States · Remote<br />Mar 2024 – Present
       </div>
     </div>
 
     <Card className="flex-1">
       <CardContent className="p-6 space-y-6">
+
+        {/* Opening statement */}
         <div className="text-gray-700">
-          Focused on architecting and automating production-grade cloud systems with strong
-          emphasis on security, scalability, and operational excellence.
+          Following relocation to the US, dedicated this period to earning 6 cloud 
+          certifications across AWS, GCP, and Azure — and building 6 production-equivalent 
+          projects to stay technically current and US market-ready. Fully authorized to 
+          work in the US (H4 EAD — no sponsorship required).
         </div>
-        
-        {/* AWS Serverless CRUD API Project */}
+
+        {/* Project 1 — 3-Tier Architecture */}
         <div>
-          <div className="font-semibold mb-2 text-amber-700">AWS Serverless CRUD API Project</div>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Built a fully serverless REST API using AWS Lambda, API Gateway, and DynamoDB to support complete CRUD operations.</li>
-            <li>Implemented secure IAM roles, structured data models, and validated all endpoints using Postman and DynamoDB results.</li>
+          <div className="font-semibold mb-2 text-sky-700">
+            AWS 3-Tier Architecture with Terraform
+          </div>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+            <li>Production-equivalent 3-tier AWS environment (VPC, ALB, ASG, EC2, RDS) 
+            across 2 AZs — fully automated with Terraform, zero SSH exposure via SSM only.</li>
+            <li>GitHub Actions CI/CD pipeline for automated build, test, and deployment — 
+            infrastructure changes versioned and auditable end-to-end.</li>
           </ul>
         </div>
 
-        {/* 3-Tier AWS Project */}
+        {/* Project 2 — Full DevOps Pipeline */}
         <div>
-          <div className="font-semibold mb-2 text-blue-600">3‑Tier AWS Project</div>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Architected and implemented a production-style AWS 3-tier environment using Terraform (VPC, ALB, EC2, RDS).</li>
-            <li>Enabled secure private-subnet application hosting via SSM and PM2.</li>
-            <li>Implemented automated zero-touch deployments using GitHub Actions, S3, and SSM.</li>
+          <div className="font-semibold mb-2 text-sky-700">
+            End-to-End DevOps Pipeline — Full-Stack Application
+          </div>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+            <li>Full DevOps lifecycle: provisioned AWS infrastructure (VPC, EC2, ALB, RDS) 
+            via AWS CLI, containerized a Java app with Docker, deployed via automated 
+            Jenkins pipelines.</li>
+            <li>Every GitHub commit triggers automated build, Docker image push to 
+            DockerHub, and zero-touch EC2 deployment.</li>
           </ul>
         </div>
 
-        {/* Serverless Password Rotation */}
+        {/* Project 3 — Infrastructure Automation */}
         <div>
-          <div className="font-semibold mb-2 text-green-600">Serverless Password Rotation</div>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Developed an automated password-rotation system using AWS Lambda, Secrets Manager, and EventBridge.</li>
-            <li>Implemented secure, KMS-encrypted secret rotation with least-privilege IAM.</li>
-            <li>Validated scheduled end-to-end rotation execution.</li>
+          <div className="font-semibold mb-2 text-sky-700">
+            End-to-End Infrastructure Automation — Terraform + GitHub Actions
+          </div>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+            <li>One pipeline to provision, configure, and deploy — Terraform handles IaC, 
+            GitHub Actions orchestrates the full workflow.</li>
+            <li>Zero manual steps from commit to live infrastructure — mirrors how mature 
+            DevOps teams operate at scale.</li>
           </ul>
         </div>
 
-        {/* Automated CI/CD Pipeline */}
+        {/* Project 4 — CI/CD Pipeline */}
         <div>
-          <div className="font-semibold mb-2 text-purple-600">Automated CI/CD Pipeline</div>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Built a fully automated CI/CD pipeline using GitHub Actions and AWS EC2.</li>
-            <li>Implemented CI stages for tests, builds, and artifact packaging.</li>
-            <li>Delivered zero-touch deployments to EC2 for consistent, production-ready releases.</li>
+          <div className="font-semibold mb-2 text-sky-700">
+            Automated CI/CD Pipeline — GitHub Actions + AWS EC2
+          </div>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+            <li>End-to-end pipeline from code commit to deployed EC2 — CI runs tests, 
+            builds app, and packages artifacts; CD deploys automatically on success.</li>
+            <li>Zero manual deployment steps — production-ready releases verified 
+            live via PM2.</li>
           </ul>
         </div>
 
-        {/* Static Website Hosting */}
+        {/* Project 5 — Password Rotation */}
         <div>
-          <div className="font-semibold mb-2 text-yellow-600">Static Website Hosting on AWS</div>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Architected and deployed a production-ready static site using S3, CloudFront, Route 53, IAM, and CloudWatch.</li>
-            <li>Implemented HTTPS, caching strategies, monitoring, and cost-optimized storage.</li>
+          <div className="font-semibold mb-2 text-sky-700">
+            Serverless Password Rotation — Lambda + Secrets Manager + EventBridge
+          </div>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+            <li>Automated credential lifecycle — Python Lambda generates and rotates 
+            secrets on EventBridge cron schedule, fully hands-off post-deployment.</li>
+            <li>Least-privilege IAM enforced (SecretsManagerReadWrite, kms:Decrypt) — 
+            KMS-encrypted, zero standing access.</li>
           </ul>
         </div>
 
-        {/* Full DevOps Pipeline */}
+        {/* Project 6 — Static Website */}
         <div>
-          <div className="font-semibold mb-2 text-red-600">Full DevOps Pipeline for a Full‑Stack Application</div>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Designed and deployed a complete CI/CD and infrastructure automation workflow using GitHub Actions, Terraform, AWS CLI, EC2, ALB, RDS MySQL, and CloudWatch.</li>
-            <li>Built a custom VPC, provisioned compute resources, configured load balancing, and automated deployments.</li>
-            <li>Delivered a scalable, production-ready environment with end-to-end automation.</li>
+          <div className="font-semibold mb-2 text-sky-700">
+            Static Website Hosting — S3 + CloudFront + Route 53 + ACM
+          </div>
+          <ul className="list-disc pl-6 space-y-1 text-gray-700">
+            <li>Production-grade static site — private S3 bucket served securely via 
+            CloudFront with Origin Access Control (OAC), never publicly exposed.</li>
+            <li>End-to-end HTTPS with ACM SSL, Route 53 DNS, custom domain mapped 
+            and validated.</li>
           </ul>
         </div>
+
       </CardContent>
     </Card>
   </div>
 
-  {/* Excelsoft Technologies */}
-  <div className="flex items-start gap-8 mb-12">
-    <div className="w-64 flex flex-col items-end pr-4 pt-2">
-      <div className="text-xl font-semibold text-right">Cloud Support Engineer</div>
-      <div className="text-xs text-gray-500 font-normal mt-1">
-        Excelsoft Technologies - Mysore<br />Jul 2021 - Feb 2023
-      </div>
+ {/* Excelsoft Technologies */}
+<div className="flex items-start gap-8 mb-12">
+  <div className="w-64 flex flex-col items-end pr-4 pt-2">
+    <div className="text-xl font-semibold text-right">
+      Configuration Management Engineer
     </div>
-
-    <Card className="flex-1">
-      <CardContent className="p-6 space-y-4">
-        <div className="mb-2">
-          Worked on designing, provisioning, and maintaining cloud infrastructure for large-scale online examination platforms.
-        </div>
-
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Engineered scalable and reliable cloud infrastructure to support high-availability exam systems.</li>
-          <li>Automated provisioning AWS core services like VPC, EC2, S3, RDS and Lambda using parameterized Terraform templates.</li>
-          <li>Optimized resource utilization and performance through monitoring and tuning.</li>
-          <li>Implemented IAM roles, policies, and least‑privilege access patterns.</li>
-          <li>Provisioned CloudWatch metrics, dashboards, and alarms as code.</li>
-          <li>Troubleshot cross-stack issues spanning infrastructure, application, and security layers.</li>
-          <li>Maintained AWS infrastructure code in GitHub for version control and automation.</li>
-        </ul>
-      </CardContent>
-    </Card>
-  </div>
-
-  {/* IIHT */}
-  <div className="flex items-start gap-8 mb-12">
-    <div className="w-64 flex flex-col items-end pr-4 pt-2">
-      <div className="text-xl font-semibold text-right">AWS Cloud Trainer</div>
-      <div className="text-xs text-gray-500 font-normal mt-1">
-        IIHT – Bangalore<br />Mar 2020 – May 2021
-      </div>
+    <div className="text-sm text-sky-700 font-medium text-right mt-1">
+      Excelsoft Technologies
     </div>
-
-    <Card className="flex-1">
-      <CardContent className="p-6 space-y-4">
-        <div className="mb-2">
-          Focused on knowledge sharing and building strong cloud fundamentals for aspiring engineers.
-        </div>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Led AWS training programs covering core cloud concepts and services.</li>
-          <li>Designed and delivered hands-on labs.</li>
-          <li>Collaborated with senior engineers to simplify technical concepts.</li>
-          <li>Built Jenkins‑based CI/CD pipelines.</li>
-          <li>Gained exposure to Docker for packaging applications.</li>
-        </ul>
-      </CardContent>
-    </Card>
-  </div>
-
-  {/* KGISL */}
-  <div className="flex items-start gap-8 mb-12">
-    <div className="w-64 flex flex-col items-end pr-4 pt-2">
-      <div className="text-xl font-semibold text-right">Junior Associate</div>
-      <div className="text-xs text-gray-500 font-normal mt-1">
-        KGISL – Bangalore<br />Jun 2017 – Feb 2020
-      </div>
+    <div className="text-xs text-gray-500 font-normal mt-1">
+      Mysore, India · Hybrid<br />Jul 2021 – Feb 2023
     </div>
-
-    <Card className="flex-1">
-      <CardContent className="p-6 space-y-4">
-        <div className="mb-2">
-          Played a key role in customer support, ensuring quick issue resolution and a positive client experience.
-        </div>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Provided customer support to U.S. clients.</li>
-          <li>Collaborated with teams to escalate issues and improve service delivery.</li>
-        </ul>
-      </CardContent>
-    </Card>
   </div>
+
+  <Card className="flex-1">
+    <CardContent className="p-6 space-y-4">
+      <div className="text-gray-700 mb-2">
+        Managed production AWS infrastructure for a global EdTech SaaS platform 
+        serving clients across India, the US, UK, and Southeast Asia — supporting 
+        AI-powered learning and assessment products used at scale.
+      </div>
+      <ul className="list-disc pl-6 space-y-1 text-gray-700">
+        <li>Provisioned and managed production AWS infrastructure (EC2, ALB, ASG, 
+        VPC, RDS, S3, Lambda, CloudWatch) using Terraform and AWS CLI.</li>
+        <li>Built and maintained Jenkins CI/CD pipelines for automated application 
+        deployments — reducing manual release effort significantly.</li>
+        <li>Implemented Ansible-based configuration management for automated 
+        deployments and system updates across environments.</li>
+        <li>Enforced IAM roles, policies, and security groups following 
+        least-privilege principles across all production resources.</li>
+        <li>Configured CloudWatch metrics, alarms, and log groups to improve 
+        infrastructure reliability and operational visibility.</li>
+        <li>Created AMIs and golden images to standardize environments and 
+        accelerate disaster recovery.</li>
+      </ul>
+    </CardContent>
+  </Card>
+</div>
+
+{/* IIHT */}
+<div className="flex items-start gap-8 mb-12">
+  <div className="w-64 flex flex-col items-end pr-4 pt-2">
+    <div className="text-xl font-semibold text-right">
+      Cloud Infrastructure Trainee
+    </div>
+    <div className="text-sm text-sky-700 font-medium text-right mt-1">
+      IIHT Ltd
+    </div>
+    <div className="text-xs text-gray-500 font-normal mt-1">
+      Bengaluru, India · Remote<br />Mar 2020 – May 2021
+    </div>
+  </div>
+
+  <Card className="flex-1">
+    <CardContent className="p-6 space-y-4">
+      <div className="text-gray-700 mb-2">
+        Gained hands-on AWS foundations while contributing to real internal 
+        projects and supporting structured cloud training programs for 
+        junior engineers.
+      </div>
+      <ul className="list-disc pl-6 space-y-1 text-gray-700">
+        <li>Delivered training sessions on AWS core services (EC2, S3, IAM, 
+        VPC, RDS, CloudWatch) and cloud security fundamentals including the 
+        Shared Responsibility Model.</li>
+        <li>Developed hands-on labs, guides, and assessments — accelerating 
+        onboarding for new engineering trainees.</li>
+        <li>Provisioned EC2 instances, configured IAM roles and policies, and 
+        set up CloudWatch monitoring on live internal projects.</li>
+        <li>Gained foundational exposure to Terraform, Jenkins, Docker, and 
+        GitHub — forming the technical base for subsequent production roles.</li>
+      </ul>
+    </CardContent>
+  </Card>
+</div>
+
+{/* KGISL */}
+<div className="flex items-start gap-8 mb-12">
+  <div className="w-64 flex flex-col items-end pr-4 pt-2">
+    <div className="text-xl font-semibold text-right">
+      Junior Associate, Customer Support
+    </div>
+    <div className="text-sm text-sky-700 font-medium text-right mt-1">
+      KGISL
+    </div>
+    <div className="text-xs text-gray-500 font-normal mt-1">
+      Bengaluru, India · On-site<br />Jun 2018 – Feb 2020
+    </div>
+  </div>
+
+  <Card className="flex-1">
+    <CardContent className="p-6 space-y-4">
+      <div className="text-gray-700 mb-2">
+        Delivered customer support to US-based clients — building strong 
+        cross-cultural communication skills and experience working across 
+        time zones.
+      </div>
+      <ul className="list-disc pl-6 space-y-1 text-gray-700">
+        <li>Managed and resolved complex client issues in collaboration with 
+        internal engineering teams — building cross-functional communication 
+        skills directly relevant to remote US work environments.</li>
+        <li>Consistently operated across US time zones — comfortable with 
+        async communication and distributed team workflows.</li>
+      </ul>
+    </CardContent>
+  </Card>
+</div>
 </section>
 
 {/* Education */}
 <section className="scroll-mt-20" id="education">
-<h2 className="text-2xl font-semibold mb-10 flex items-center gap-2">
-  🎓 Education
-</h2>
+  <h2 className="text-2xl font-semibold mb-10 flex items-center gap-2">
+    🎓 Education
+  </h2>
 
   <div className="flex items-start gap-8 mb-12">
     <div className="w-64 flex flex-col items-end pr-4 pt-2">
       <div className="text-lg font-bold text-right">
-        JSS Academy of Technical Education (JSSATE)
+        JSS Academy of Technical Education
+      </div>
+      <div className="text-sm text-sky-700 font-medium text-right mt-1">
+        JSSATE, Bengaluru, India
       </div>
       <div className="text-xs text-gray-500 font-normal mt-1">
-        Bangalore, India<br />2013 – 2017
+        2013 – 2017
       </div>
     </div>
 
     <Card className="flex-1">
       <CardContent className="p-6 space-y-4">
-        <div className="mb-2">
-          Bachelors in Information Science & Engineering
+        <div className="font-medium text-gray-700">
+          Bachelor of Engineering — Information Science & Engineering
+        </div>
+        <div className="text-gray-500 text-sm">
+          Foundation in computer networks, operating systems, database 
+          systems, and software engineering.
         </div>
       </CardContent>
     </Card>
   </div>
 </section>
 </div>
-
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 mt-16">
         &copy; {new Date().getFullYear()} Maria Arpitha — engineered with React, Tailwind & a tailwind of joy.
