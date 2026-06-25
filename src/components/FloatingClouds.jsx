@@ -2,26 +2,26 @@ import React, { useMemo } from 'react';
 import { Cloud as CloudIcon } from "lucide-react";
 
 const FloatingClouds = () => {
-  const clouds = useMemo(() => {
-    return Array.from({ length: 15 }).map((_, i) => ({
+  // Deterministic positions so SSR/hydration is consistent
+  const clouds = useMemo(() =>
+    Array.from({ length: 20 }).map((_, i) => ({
       id: i,
-      size: 32 + Math.random() * 24,
+      size: 28 + (i * 11) % 38,
       style: {
-        top: `${Math.random() * 100}%`,
-        left: `${Math.random() * 100}%`,
-        transform: `rotate(${Math.random() * 360}deg)`,
-        animationDuration: `${5 + Math.random() * 5}s`,
-        animationDelay: `${Math.random() * 5}s`, // Stagger animations for a more natural effect
+        top: `${(i * 5.7) % 100}%`,
+        left: `${(i * 13.3) % 100}%`,
+        animationDuration: `${7 + (i * 1.9) % 6}s`,
+        animationDelay: `${(i * 0.65) % 5}s`,
       },
-    }));
-  }, []); // Empty dependency array ensures this runs only once
+    }))
+  , []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
-      {clouds.map(cloud => (
+    <div className="fixed inset-0 pointer-events-none z-[1]" aria-hidden="true">
+      {clouds.map((cloud) => (
         <CloudIcon
           key={cloud.id}
-          className="absolute text-sky-200 opacity-20 cloud-floating"
+          className="absolute text-sky-300 opacity-[0.2] cloud-floating"
           size={cloud.size}
           style={cloud.style}
         />

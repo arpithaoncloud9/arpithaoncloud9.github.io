@@ -1,0 +1,51 @@
+export const toolboxCategories = [
+  {
+    icon: "☁️",
+    label: "Cloud Platforms",
+    tools: ["AWS (Primary)", "GCP", "Azure"],
+    color: "bg-sky-50 border-sky-200",
+    badge: "bg-sky-100 text-sky-700",
+  },
+  {
+    icon: "🏗️",
+    label: "Infrastructure as Code & Automation",
+    tools: ["Terraform", "Ansible"],
+    color: "bg-emerald-50 border-emerald-200",
+    badge: "bg-emerald-100 text-emerald-700",
+  },
+  {
+    icon: "🔄",
+    label: "CI/CD & Containers",
+    tools: ["GitHub Actions", "Jenkins", "Docker", "Kubernetes"],
+    color: "bg-indigo-50 border-indigo-200",
+    badge: "bg-indigo-100 text-indigo-700",
+  },
+  {
+    icon: "🔐",
+    label: "Security & IAM",
+    tools: ["IAM", "Secrets Manager", "KMS", "Security Groups"],
+    color: "bg-amber-50 border-amber-200",
+    badge: "bg-amber-100 text-amber-700",
+  },
+  {
+    icon: "📊",
+    label: "Observability",
+    tools: ["CloudWatch", "CloudTrail", "SNS Alerting"],
+    color: "bg-rose-50 border-rose-200",
+    badge: "bg-rose-100 text-rose-700",
+  },
+  {
+    icon: "💻",
+    label: "Developer Tools",
+    tools: ["Git", "GitHub", "Bash", "Linux", "VS Code"],
+    color: "bg-violet-50 border-violet-200",
+    badge: "bg-violet-100 text-violet-700",
+  },
+  {
+    icon: "🤖",
+    label: "AI Tools",
+    tools: ["GitHub Copilot", "Claude"],
+    color: "bg-teal-50 border-teal-200",
+    badge: "bg-teal-100 text-teal-700",
+  },
+];
