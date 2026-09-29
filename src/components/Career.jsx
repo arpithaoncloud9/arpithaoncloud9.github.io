@@ -24,8 +24,9 @@ const entries = [
           </div>
           <div className="flex flex-wrap gap-1.5">
             {[
-              "AWS CloudOps Engineer – Associate",
+              "AWS DevOps Engineer – Professional",
               "AWS Solutions Architect – Associate",
+              "AWS CloudOps Engineer – Associate",
               "AWS AI Practitioner",
               "GCP Cloud Digital Leader",
               "GCP Generative AI Leader",
@@ -113,32 +114,6 @@ const entries = [
           ].map((b, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
-              {b}
-            </li>
-          ))}
-        </ul>
-      </div>
-    ),
-  },
-  {
-    title: "Junior Associate, Customer Support",
-    company: "KGISL",
-    location: "Bengaluru, India · On-site",
-    period: "Jun 2018 – Feb 2020",
-    dot: "bg-amber-500 ring-amber-200",
-    content: (
-      <div className="space-y-3 text-sm text-gray-600">
-        <p>
-          Delivered customer support to US-based clients — building strong cross-cultural
-          communication skills and experience working across time zones.
-        </p>
-        <ul className="space-y-1.5">
-          {[
-            "Managed and resolved complex client issues in collaboration with internal engineering teams — building cross-functional communication skills directly relevant to remote US work environments.",
-            "Consistently operated across US time zones — comfortable with async communication and distributed team workflows.",
-          ].map((b, i) => (
-            <li key={i} className="flex items-start gap-2">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0" />
               {b}
             </li>
           ))}
