@@ -79,10 +79,10 @@ const entries = [
           {[
             "Provisioned and managed production AWS infrastructure (EC2, ALB, ASG, VPC, RDS, S3, Lambda, CloudWatch) using Terraform and AWS CLI.",
             "Built and maintained Jenkins CI/CD pipelines for automated application deployments — reducing manual release effort significantly.",
-            "Implemented Ansible-based configuration management for automated deployments and system updates across environments.",
             "Enforced IAM roles, policies, and security groups following least-privilege principles across all production resources.",
             "Configured CloudWatch metrics, alarms, and log groups to improve infrastructure reliability and operational visibility.",
             "Created AMIs and golden images to standardize environments and accelerate disaster recovery.",
+            "Partnered with cross-functional teams during production incidents to diagnose infrastructure failures, resolve environment misalignment issues, and implement preventive fixes.",
           ].map((b, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
