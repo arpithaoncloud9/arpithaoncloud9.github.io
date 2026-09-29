@@ -13,7 +13,7 @@ const entries = [
       <div className="space-y-5">
         <p className="text-sm text-gray-600 leading-relaxed">
           Following relocation to the US, used this period to earn{" "}
-          <strong className="text-gray-800">6 cloud certifications</strong> across AWS, GCP, and Azure — and build{" "}
+          <strong className="text-gray-800">7 cloud certifications</strong> across AWS, GCP, and Azure — and build{" "}
           <strong className="text-gray-800">6 production-equivalent projects</strong> to stay technically
           current and US market-ready. Fully authorized to work in the US (H4 EAD — no sponsorship required).
         </p>
