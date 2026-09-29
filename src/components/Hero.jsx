@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Terminal, Cloud, Zap, ShieldCheck } from "lucide-react";
 
 const stats = [
-  { label: "Years Experience", value: "4+", icon: Terminal, bg: "bg-sky-50", text: "text-sky-600" },
+  { label: "Years Experience", value: "5+", icon: Terminal, bg: "bg-sky-50", text: "text-sky-600" },
   { label: "Certifications", value: "7", icon: Cloud, bg: "bg-indigo-50", text: "text-indigo-600" },
   { label: "Projects Built", value: "6", icon: Zap, bg: "bg-emerald-50", text: "text-emerald-600" },
   { label: "Cloud Providers", value: "3", icon: ShieldCheck, bg: "bg-amber-50", text: "text-amber-600" },
@@ -62,7 +62,7 @@ export default function Hero() {
       >
         <p>
           My background includes provisioning and managing AWS infrastructure using Terraform,
-          building CI/CD pipelines with GitHub Actions and Jenkins, and designing secure multi-AZ
+          building CI/CD pipelines with GitHub Actions and designing secure multi-AZ
           architectures — gained through real production work at an EdTech SaaS company serving
           clients across the US, UK, and Southeast Asia.
         </p>
