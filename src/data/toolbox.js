@@ -16,7 +16,7 @@ export const toolboxCategories = [
   {
     icon: "🔄",
     label: "CI/CD & Containers",
-    tools: ["GitHub Actions", "Jenkins", "Docker", "Kubernetes"],
+    tools: ["GitHub Actions", "Jenkins", "Docker", "ECS", "Kubernetes", "EKS"],
     color: "bg-indigo-50 border-indigo-200",
     badge: "bg-indigo-100 text-indigo-700",
   },
@@ -44,7 +44,7 @@ export const toolboxCategories = [
   {
     icon: "🤖",
     label: "AI Tools",
-    tools: ["GitHub Copilot", "Claude"],
+    tools: ["GitHub Copilot", "Claude Code"],
     color: "bg-teal-50 border-teal-200",
     badge: "bg-teal-100 text-teal-700",
   },

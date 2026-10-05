@@ -63,7 +63,7 @@ const entries = [
     ),
   },
   {
-    title: "Configuration Management Engineer",
+    title: "Configuration Management Engineer - AWS & DevOps",
     company: "Excelsoft Technologies",
     location: "Mysore, India · Hybrid",
     period: "Jul 2021 – Feb 2023",
@@ -94,10 +94,10 @@ const entries = [
     ),
   },
   {
-    title: "Cloud Infrastructure Trainee",
+    title: "Cloud Trainer - AWS Speciality",
     company: "IIHT Ltd",
     location: "Bengaluru, India · Remote",
-    period: "Mar 2020 – May 2021",
+    period: "Jan 2018 – June 2021",
     dot: "bg-emerald-500 ring-emerald-200",
     content: (
       <div className="space-y-3 text-sm text-gray-600">
