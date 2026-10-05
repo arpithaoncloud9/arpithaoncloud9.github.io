@@ -13,7 +13,7 @@ const entries = [
       <div className="space-y-5">
         <p className="text-sm text-gray-600 leading-relaxed">
           Following relocation to the US, used this period to earn{" "}
-          <strong className="text-gray-800">7 cloud certifications</strong> across AWS, GCP, and Azure — and build{" "}
+          <strong className="text-gray-800">6 cloud certifications</strong> across AWS, GCP, and Azure — and build{" "}
           <strong className="text-gray-800">6 production-equivalent projects</strong> to stay technically
           current and US market-ready. Fully authorized to work in the US (H4 EAD — no sponsorship required).
         </p>
@@ -24,9 +24,8 @@ const entries = [
           </div>
           <div className="flex flex-wrap gap-1.5">
             {[
-              "AWS DevOps Engineer – Professional",
-              "AWS Solutions Architect – Associate",
               "AWS CloudOps Engineer – Associate",
+              "AWS Solutions Architect – Associate",
               "AWS AI Practitioner",
               "GCP Cloud Digital Leader",
               "GCP Generative AI Leader",
@@ -79,10 +78,10 @@ const entries = [
           {[
             "Provisioned and managed production AWS infrastructure (EC2, ALB, ASG, VPC, RDS, S3, Lambda, CloudWatch) using Terraform and AWS CLI.",
             "Built and maintained Jenkins CI/CD pipelines for automated application deployments — reducing manual release effort significantly.",
+            "Implemented Ansible-based configuration management for automated deployments and system updates across environments.",
             "Enforced IAM roles, policies, and security groups following least-privilege principles across all production resources.",
             "Configured CloudWatch metrics, alarms, and log groups to improve infrastructure reliability and operational visibility.",
             "Created AMIs and golden images to standardize environments and accelerate disaster recovery.",
-            "Partnered with cross-functional teams during production incidents to diagnose infrastructure failures, resolve environment misalignment issues, and implement preventive fixes.",
           ].map((b, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
@@ -97,7 +96,7 @@ const entries = [
     title: "Cloud Trainer - AWS Speciality",
     company: "IIHT Ltd",
     location: "Bengaluru, India · Remote",
-    period: "Jan 2018 – June 2021",
+    period: "Mar 2020 – May 2021",
     dot: "bg-emerald-500 ring-emerald-200",
     content: (
       <div className="space-y-3 text-sm text-gray-600">
@@ -121,10 +120,7 @@ const entries = [
       </div>
     ),
   },
-<<<<<<< HEAD
-=======
 
->>>>>>> 6e6cd69 (made changes in career.jsx)
 ];
 
 export default function Career() {
