@@ -31,7 +31,7 @@ export default function Education() {
           <Card className="shadow-sm bg-white/90 backdrop-blur-sm border-gray-200">
             <CardContent className="p-5">
               <div className="font-medium text-gray-700 text-sm">
-                Bachelor of Engineering — Information Science & Engineering
+                Bachelor of Engineering — Information Science & Engineering (ISE)
               </div>
               <div className="text-gray-500 text-xs mt-2">
                 Foundation in computer networks, operating systems, database systems, and software engineering.
