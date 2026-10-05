@@ -121,6 +121,10 @@ const entries = [
       </div>
     ),
   },
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e6cd69 (made changes in career.jsx)
 ];
 
 export default function Career() {
