@@ -24,7 +24,7 @@ export default function Education() {
           <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 mb-0.5">
             <span className="font-bold text-gray-800 text-sm">JSS Academy of Technical Education</span>
             <span className="text-violet-600 font-medium text-xs">@ JSSATE, Bengaluru, India</span>
-            <span className="text-[11px] font-mono text-gray-400 ml-auto">2013 – 2017</span>
+            <span className="text-[11px] font-mono text-gray-400 ml-auto">2017</span>
           </div>
           <div className="text-[11px] text-gray-400 mb-3">Bengaluru, India · On-site</div>
 
