@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "AWS 3-Tier Production Project — EKS Migration",
-    tags: ["Terraform", "Docker", "GitHub Actions", "Kubernetes", "CloudWatch", "EKS", "ECR"],
+    tags: ["Terraform", "Docker", "GitHub Actions", "ECR", "EKS", "CloudWatch"],
     github: "https://github.com/arpithaoncloud9/terraform-three-tier-infra",
     bullets: [
       "Provisioned 3‑tier AWS architecture — VPC, ALB, EKS, RDS MySQL, IAM across multi‑AZ using Terraform with zero manual steps.",
