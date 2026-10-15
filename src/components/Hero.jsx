@@ -26,9 +26,9 @@ export default function Hero() {
         <div className="text-xs font-mono text-sky-200 mb-1 uppercase tracking-widest">
           Active Resource
         </div>
-        <h1 className="text-2xl font-bold mb-1">Maria Arpitha</h1>
+        <h1 className="text-2xl font-bold mb-1">Maria Arpitha Sagayam</h1>
         <p className="text-sky-100 text-sm">
-          Cloud & DevOps Engineer &nbsp;·&nbsp; us-east-1 &nbsp;·&nbsp; H4 EAD — No Sponsorship Required
+          Cloud Infrastructure Engineer &nbsp;·&nbsp; us-east-1 &nbsp;·&nbsp; H4 EAD — No Sponsorship Required
         </p>
       </motion.div>
 
@@ -61,9 +61,9 @@ export default function Hero() {
         className="bg-white rounded-xl border border-gray-200 p-6 space-y-3 text-gray-700 text-sm leading-relaxed shadow-sm"
       >
         <p>
-          My background includes provisioning and managing AWS infrastructure using Terraform,
-          building CI/CD pipelines with GitHub Actions and designing secure multi-AZ
-          architectures — gained through real production work at an EdTech SaaS company serving
+          My background includes provisioning AWS infrastructure with Terraform,
+          building CI/CD pipelines using GitHub Actions and designing secure multi-AZ
+          architectures backend by real production experience at an EdTech SaaS company serving
           clients across the US, UK, and Southeast Asia.
         </p>
         <p>

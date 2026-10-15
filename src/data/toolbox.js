@@ -16,7 +16,7 @@ export const toolboxCategories = [
   {
     icon: "🔄",
     label: "CI/CD & Containers",
-    tools: ["GitHub Actions", "Jenkins", "Docker", "ECS", "Kubernetes", "EKS"],
+    tools: ["GitHub Actions", "Docker", "ECS", "EKS"],
     color: "bg-indigo-50 border-indigo-200",
     badge: "bg-indigo-100 text-indigo-700",
   },

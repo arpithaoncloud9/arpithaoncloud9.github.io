@@ -5,12 +5,12 @@ import {
 } from "lucide-react";
 
 const NAV_ITEMS = [
-  { id: "top",            label: "Dashboard",      icon: LayoutDashboard },
-  { id: "projects",       label: "Projects",       icon: FolderGit2 },
-  { id: "career",         label: "Experience",     icon: Briefcase },
-  { id: "toolbox",        label: "Tech Toolbox",   icon: Wrench },
+  { id: "top", label: "Dashboard", icon: LayoutDashboard },
+  { id: "projects", label: "Projects", icon: FolderGit2 },
+  { id: "career", label: "Experience", icon: Briefcase },
+  { id: "toolbox", label: "Tech Toolbox", icon: Wrench },
   { id: "certifications", label: "Certifications", icon: Award },
-  { id: "education",      label: "Education",      icon: GraduationCap },
+  { id: "education", label: "Education", icon: GraduationCap },
 ];
 
 export default function ConsoleSidebar({ mainRef }) {
@@ -39,14 +39,14 @@ export default function ConsoleSidebar({ mainRef }) {
       <div className="p-4 border-b border-[#1a2535] flex flex-col items-center text-center gap-1.5">
         <img
           src="./images/profile.jpg"
-          alt="Maria Arpitha"
+          alt="Maria Arpitha Sagayam"
           className="w-14 h-14 rounded-full border-2 border-sky-500/40 object-cover shadow-md"
         />
         <div className="text-white font-semibold text-sm leading-tight mt-0.5">
           Maria Arpitha
         </div>
         <div className="text-sky-400 text-[11px] leading-tight">
-          Cloud & DevOps Engineer
+          Cloud Infrastructure Engineer
         </div>
         <div className="flex gap-3 mt-1">
           <a
@@ -79,11 +79,10 @@ export default function ConsoleSidebar({ mainRef }) {
             <button
               key={id}
               onClick={() => navigate(id)}
-              className={`w-full flex items-center gap-2.5 px-4 py-2 text-xs text-left transition-colors border-l-2 ${
-                isActive
+              className={`w-full flex items-center gap-2.5 px-4 py-2 text-xs text-left transition-colors border-l-2 ${isActive
                   ? "bg-sky-500/10 border-sky-400 text-sky-300"
                   : "border-transparent text-gray-400 hover:text-white hover:bg-[#1a2535]"
-              }`}
+                }`}
             >
               <Icon size={14} className="shrink-0" />
               {label}
