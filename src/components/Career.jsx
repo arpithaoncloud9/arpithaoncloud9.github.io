@@ -4,7 +4,7 @@ import { Card, CardContent } from "./ui/card";
 
 const entries = [
   {
-    title: "Cloud & DevOps Engineer",
+    title: "Cloud Infrastructure Engineer",
     company: "Self-Directed Cloud Engineering",
     location: "United States · Remote",
     period: "Mar 2024 – Present",
@@ -13,8 +13,8 @@ const entries = [
       <div className="space-y-5">
         <p className="text-sm text-gray-600 leading-relaxed">
           Following relocation to the US, used this period to earn{" "}
-          <strong className="text-gray-800">6 cloud certifications</strong> across AWS, GCP, and Azure — and build{" "}
-          <strong className="text-gray-800">6 production-equivalent projects</strong> to stay technically
+          <strong className="text-gray-800">7 cloud certifications</strong> across AWS, GCP, and Azure — and build{" "}
+          <strong className="text-gray-800"> production-equivalent projects</strong> to stay technically
           current and US market-ready. Fully authorized to work in the US (H4 EAD — no sponsorship required).
         </p>
 
@@ -24,8 +24,9 @@ const entries = [
           </div>
           <div className="flex flex-wrap gap-1.5">
             {[
-              "AWS CloudOps Engineer – Associate",
+              "AWS DevOps Engineer – Professional",
               "AWS Solutions Architect – Associate",
+              "AWS CloudOps Engineer – Associate",
               "AWS AI Practitioner",
               "GCP Cloud Digital Leader",
               "GCP Generative AI Leader",
@@ -44,12 +45,11 @@ const entries = [
           </div>
           <ul className="space-y-1.5">
             {[
-              "AWS 3-Tier Architecture — EKS Migration with Terraform, Docker, GitHub Actions, CloudWatch",
-              "End-to-End DevOps Pipeline — Jenkins, Docker, AWS (VPC · EC2 · ALB · RDS)",
-              "Infrastructure Automation — Terraform + GitHub Actions, zero manual steps",
-              "Serverless Credential Rotation — Lambda, Secrets Manager, EventBridge, KMS",
-              "Automated CI/CD Pipeline — GitHub Actions + EC2, PM2 zero-touch deploys",
-              "Secure Static Website — S3, CloudFront OAC, ACM SSL, Route 53",
+              "AWS 3‑Tier Architecture — Terraform · Docker · GitHub Actions · ECR · CloudWatch",
+              "Zero‑Downtime Container Deployments — Docker · ECR · ECS Fargate · ALB · IAM · CloudWatch",
+              "Infrastructure Automation Pipeline — Terraform + GitHub Actions (zero manual steps)",
+              "Serverless Credential Rotation — Lambda · Secrets Manager · EventBridge · KMS",
+              "Secure Static Website Hosting — S3 · CloudFront OAC · ACM SSL · Route 53",
             ].map((p, i) => (
               <li key={i} className="flex items-start gap-2 text-xs text-gray-600">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-sky-400 shrink-0" />
@@ -62,8 +62,8 @@ const entries = [
     ),
   },
   {
-    title: "Configuration Management Engineer - AWS & DevOps",
-    company: "Excelsoft Technologies",
+    title: "Configuration Management Engineer - AWS Cloud Infrastructure",
+    company: "Excelsoft Technologies Pvt. Ltd.",
     location: "Mysore, India · Hybrid",
     period: "Jul 2021 – Feb 2023",
     dot: "bg-indigo-500 ring-indigo-200",
@@ -76,12 +76,13 @@ const entries = [
         </p>
         <ul className="space-y-1.5">
           {[
-            "Provisioned and managed production AWS infrastructure (EC2, ALB, ASG, VPC, RDS, S3, Lambda, CloudWatch) using Terraform and AWS CLI.",
-            "Built and maintained Jenkins CI/CD pipelines for automated application deployments — reducing manual release effort significantly.",
-            "Implemented Ansible-based configuration management for automated deployments and system updates across environments.",
-            "Enforced IAM roles, policies, and security groups following least-privilege principles across all production resources.",
-            "Configured CloudWatch metrics, alarms, and log groups to improve infrastructure reliability and operational visibility.",
-            "Created AMIs and golden images to standardize environments and accelerate disaster recovery.",
+            "AWS infrastructure provisioning — ProvisioBuiltned and managed production‑grade AWS infrastructure (EC2, ALB, ASG, VPC, RDS, S3, Lambda, CloudWatch) using Terraform and AWS CLI.",
+            "Terraform module development — Developed reusable Terraform modules for networking, compute, and database layers, fully parameterized and version‑controlled in GitHub.",
+            "EC2 automation — Automated EC2 provisioning using Bash‑based user data scripts for instance initialization and configuration.",
+            "IAM security enforcement — Enforced least‑privilege IAM roles, policies, and security groups across all production resources.",
+            "CloudWatch observability — Configured CloudWatch metrics, alarms, and log groups to improve infrastructure reliability and operational visibility.",
+            "AMI and golden image management — Created and maintained AMIs and golden images to standardize environments and accelerate disaster recovery.",
+            "Cross‑functional incident response — Collaborated with cross‑functional teams during production incidents to diagnose infrastructure failures, resolve environment misalignments, and implement preventive fixes.",
           ].map((b, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
@@ -94,9 +95,9 @@ const entries = [
   },
   {
     title: "Cloud Trainer - AWS Speciality",
-    company: "IIHT Ltd",
-    location: "Bengaluru, India · Remote",
-    period: "Mar 2020 – May 2021",
+    company: "Indian Institute of Hardware Technology Ltd. (IIHT)",
+    location: "Bangalore, India · Remote",
+    period: "Jan 2018 – Jun 2021",
     dot: "bg-emerald-500 ring-emerald-200",
     content: (
       <div className="space-y-3 text-sm text-gray-600">
@@ -106,10 +107,10 @@ const entries = [
         </p>
         <ul className="space-y-1.5">
           {[
-            "Delivered training sessions on AWS core services (EC2, S3, IAM, VPC, RDS, CloudWatch) and cloud security fundamentals including the Shared Responsibility Model.",
-            "Developed hands-on labs, guides, and assessments — accelerating onboarding for new engineering trainees.",
-            "Provisioned EC2 instances, configured IAM roles and policies, and set up CloudWatch monitoring on live internal projects.",
-            "Gained foundational exposure to Terraform, Jenkins, Docker, and GitHub — forming the technical base for subsequent production roles.",
+            "AWS training delivery — Delivered training sessions on AWS core services (EC2, S3, IAM, VPC, RDS, CloudWatch) and cloud security fundamentals, including the Shared Responsibility Model. ",
+            "Hands‑on lab development — Developed practical labs, guides, and assessments that accelerated onboarding for new engineering trainees.",
+            "Internal AWS project work — Provisioned EC2 instances, configured IAM roles and policies, and set up CloudWatch monitoring for live internal projects.",
+            "Foundational DevOps exposure — Gained early exposure to Terraform, Jenkins, Docker, and GitHub, forming the technical base for later production‑level cloud roles.",
           ].map((b, i) => (
             <li key={i} className="flex items-start gap-2">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
