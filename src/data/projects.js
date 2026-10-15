@@ -30,7 +30,6 @@ export const projects = [
     title: "Secure Static Website",
     tags: ["S3", "CloudFront", "ACM", "Route 53", "IAM"],
     github: "https://github.com/arpithaoncloud9/aws-static-site-demo",
-    github: null,
     bullets: [
       "Hosted static website on private S3 bucket using CloudFront Origin Access Control (OAC) for secure content delivery.",
       "Configured ACM SSL + Route 53 for custom domain with full HTTPS and no public S3 access.",
