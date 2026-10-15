@@ -4,7 +4,7 @@ export const projects = [
     tags: ["Terraform", "Docker", "GitHub Actions", "Kubernetes", "CloudWatch", "EKS", "ECR"],
     github: "https://github.com/arpithaoncloud9/terraform-three-tier-infra",
     bullets: [
-      "[Provisioned 3‑tier AWS architecture](ca://s?q=Explain_AWS_3_tier_architecture) — VPC, ALB, EKS, RDS MySQL, IAM across multi‑AZ using Terraform with zero manual steps.",
+      "Provisioned 3‑tier AWS architecture — VPC, ALB, EKS, RDS MySQL, IAM across multi‑AZ using Terraform with zero manual steps.",
       "Built GitHub Actions CI/CD pipeline — terraform plan on PR, apply on merge, Docker build, ECR push, kubectl rollout.",
       "Containerized Node.js application — Docker image pushed to ECR using IAM role authentication (no stored credentials).",
       "Migrated compute from EC2/ASG to EKS — Deployment, Service, HPA, Kubernetes Secret for DB credentials.",
